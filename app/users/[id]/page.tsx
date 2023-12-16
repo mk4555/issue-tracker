@@ -5,12 +5,9 @@ interface Props {
     params: {
         id: number
     }
-    searchParams: {
-      sortOrder: string;
-    } 
 }
 
-const UserDetailPage = ({ params: { id }, searchParams: { sortOrder }}: Props) => {
+const UserDetailPage = ({ params: { id }}: Props) => {
   if(id > 10) notFound();
   return (
     <div>UserDetailPage {id} </div>
